@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Turn The Lamp</title>
+  
+  <style>
+    img{
+      position:relative;
+      left:108px;
+    }
+  </style>
+</head>
+<body>
+<center><h1>Click The Lamp</h1></center>
+
+<img src="lampu-mati.jpg" width="138px" height="220px" id="img">
+
+
+  <!--javascript-->
+  <script>
+    document.getElementById("img").addEventListener("click",hidup)
+    var img = document.getElementById("img")
+    
+    var a = 1
+    function hidup(){
+      if(a==1){
+      img.src="lampu-hidup.jpg"
+      a=2
+      }else {
+        img.src="lampu-mati.jpg"
+        a=1
+      }
+    }
+  </script>
+</body>
+</html>
